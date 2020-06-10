@@ -1,24 +1,23 @@
-def myHelloFunction():
-    print ("this is my sub-function")
-myHelloFunction()
-
-
-def checkBalance(inbank):
-    if (inbank < 10):
-        print ("your amount < $10")
-    else:
-        print ("good amount >= $10")
-checkBalance(5)
+#! /usr/bin/env python3
 
 
 def withdrawFromAccount(current_account, amount):
     if (current_account > amount):
         current_account = current_account - amount
-        print ("remaining $ in your account: ", current_account)
         return current_account
     else:
-        print ("you are withdrawing over your amount in your account")
-new_balance = withdrawFromAccount(500,50)
+        print ("Fail")
 
-str = "I am very passionate about software quality."
-print(len(str))
+
+def function_default_arguments(a,b,c):
+    print (f"a is {a}, b is {b}, c is {c}")
+
+def main():
+    new_balance = withdrawFromAccount(500,50)
+    print (f"New balance is: {new_balance}")
+    print (f"New balance is: {withdrawFromAccount(500,50)}")
+
+    function_default_arguments(1,2)
+
+
+if __name__ == "__main__": main()
