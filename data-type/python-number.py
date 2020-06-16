@@ -13,8 +13,7 @@ def deal_with_decimal():
     print ("{} + {} = {}".format(j,k,j+k))
 
 
-
-def main():
+def number_operators():
     a,b=17,5
     print (" {} + {} = {}".format(a,b,a+b))
     print (" {} - {} = {}".format(a,b,a-b))
@@ -24,6 +23,15 @@ def main():
     print (" {} % {} = {}".format(a,b,a%b))
 
 
-if __name__ == "__main__": 
-    main()
-    deal_with_decimal()
+def number_builtin_funcs():
+    pass
+
+def main():
+    x = '75'
+    intx = int(x) 
+    y = isinstance(intx,int)
+    print(f"{intx} , {type(intx)} : {y}")
+
+
+if __name__ == "__main__": main()
+   

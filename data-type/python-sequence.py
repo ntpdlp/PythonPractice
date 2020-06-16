@@ -5,13 +5,23 @@ def python_mutable_array_list():
     myarr = [1,2,3,4,5]
     myarr[0] = 100
     for x in myarr:
-        print (f"{x} ",end=" ")
+        print (f"{x} ",end=" ", flush=True)
+    print("\n")
+
+    print(f"Sum of list is: {sum(myarr)}")
+    print(f"Sum of list start with +100 is: {sum(myarr,100)}")
+    print(f"Max, Min in list is: {max(myarr)}, {min(myarr)}")
 
 def python_mutable_dict():
     mydict = {'one':1, 'two':2, 'three':3}
     mydict['two'] = 5
     for k,v in mydict.items():
         print (f"<{k}:{v}> ", end="\t")
+
+def python_mutable_dict2():
+    mydic = dict(one=1,two=2,three=3)
+    for k in mydic:
+        print("<{} : {}>".format(k,mydic[k]),end="\t")    
 
 #immutable: not allow to reassignment
 def python_immutable_tuple():
@@ -38,6 +48,7 @@ def mutable_immutable():
     python_mutable_array_list()
     print ("\nDictionary", end=': ')
     python_mutable_dict()
+    python_mutable_dict2()
 
     #immutable
     print ("\nImmutable Tuple", end=': ')
@@ -59,8 +70,9 @@ def sequence_is_object_type_in_python():
     
 
 def main():
+    python_mutable_array_list()
     # mutable_immutable()
-    sequence_is_object_type_in_python()
+    # sequence_is_object_type_in_python()
 
 
 

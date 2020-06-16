@@ -1,0 +1,5 @@
+In Python, everything is object:
+ - a class
+ - a function
+ - a list|tuple|dict
+ - a number|a string

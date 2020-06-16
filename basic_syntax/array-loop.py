@@ -40,8 +40,8 @@ def while_break():
 
 def main():
     # for_loop()
-    # for_continue()
     # while_loop()
+    for_continue()
     while_break()
 
 if __name__ == "__main__": main()
